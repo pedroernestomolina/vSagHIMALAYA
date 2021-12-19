@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuracion>
+  <MiServidor>
+    <NombreServidor>MI-SERVIDOR</NombreServidor>
+    <Instancia>localhost</Instancia>
+    <Catalogo>AM</Catalogo>
+  </MiServidor>
+  <VariablesDeConfiguracion>
+    <Id_Del_Equipo>6479d8a8-bc1b-45be-b2c4-dcf7256ccb74</Id_Del_Equipo>
+    <DefineSeriesDocumentos>
+      <Factura>K</Factura>
+      <NotaEntrega>NE</NotaEntrega>
+      <NotaCredito>KN</NotaCredito>
+      <NotaDebito></NotaDebito>
+    </DefineSeriesDocumentos>
+  </VariablesDeConfiguracion>
+  <Dispositivos>
+    <ImpresoraFiscal>
+      <Activar>Si</Activar>
+      <ModeloUsar>10</ModeloUsar>
+      <PuertoConectar>1</PuertoConectar>
+    </ImpresoraFiscal>
+    <VisorPrecios>
+      <Activar>No</Activar>
+      <PuertoConectar>0</PuertoConectar>
+    </VisorPrecios>
+  </Dispositivos>
+  <Formatos>
+    <Documento>
+      <TipoDocumento>1</TipoDocumento>
+      <TipoPapel>4</TipoPapel>
+      <CantidadLineasDetalleImprimir>17</CantidadLineasDetalleImprimir>
+      <Ruta>NOTAS</Ruta>
+    </Documento>
+    <Documento>
+      <TipoDocumento>2</TipoDocumento>
+      <TipoPapel>4</TipoPapel>
+      <CantidadLineasDetalleImprimir>17</CantidadLineasDetalleImprimir>
+      <Ruta>NOTAS</Ruta>
+    </Documento>
+  </Formatos>
+  <RutaImpresoraTexto>NOTAS</RutaImpresoraTexto>
+  <BLOQUEAR_VENTAS>Si</BLOQUEAR_VENTAS>
+  <PERIODO_VENTA_TRANSCURRIR>15</PERIODO_VENTA_TRANSCURRIR>
+
+</Configuracion>

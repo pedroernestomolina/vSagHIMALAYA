@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<formato>
+  <configuracion>
+    <hoja>HC</hoja>
+    <items>33</items>
+    <pregunta>S</pregunta>
+    <impresora>NORMAL</impresora>
+  </configuracion>
+
+  <encabezado >
+    <linea>
+      <texto contenido="SENIAT" fila="1" columna="0" tamaño="G" alineacion="C" formato="B"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@nombre_empresa" fila="2" columna="0" tamaño="G" alineacion="C" formato="B" longitud="80"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@rif_empresa" fila="3" columna="0" tamaño="N" alineacion="C" formato="N" longitud="80"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@direccion_empresa" fila="4" columna="0" tamaño="N" alineacion="C" formato="N" longitud="80"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="FECHA: " fila="5" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@fecha_emision" fila="5" columna="8" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="HORA: " fila="5" columna="28" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@hora_factura" fila="5" columna="35" tamaño="N" alineacion="N" formato="N" longitud="7"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="VENDEDOR: " fila="5" columna="49" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@vendedor" fila="5" columna="60" tamaño="N" alineacion="N" formato="N" longitud="20"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="COND/PAGO: " fila="6" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@condicion_pago" fila="6" columna="11" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="FECHA/VENC: " fila="6" columna="25" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@fecha_emision" fila="6" columna="37" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="NOTA ENTREGA # " fila="6" columna="54" tamaño="N" alineacion="N" formato="B"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@nro_factura" fila="6" columna="69" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <funcion>frayadosimple</funcion>
+    </linea>
+    <linea>
+      <texto contenido="DATOS DEL CLIENTE: " fila="8" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@nombre_cliente" fila="9" columna="0" tamaño="N" alineacion="N" formato="B" longitud="60"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@ci_rifcliente" fila="10" columna="0" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="DIRECCION: " fila="11" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@direccion_cliente" fila="11" columna="12" tamaño="P" alineacion="N" formato="N" longitud="65"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="TELEFONO: " fila="12" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@telefono_cliente" fila="12" columna="11" tamaño="N" alineacion="N" formato="N" longitud="14"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="DIAS DE VALIDEZ: " fila="12" columna="58" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@dias_validez" fila="12" columna="75" tamaño="N" alineacion="N" formato="N" longitud="4"></etiqueta>
+    </linea>
+    <linea>
+      <funcion>frayadosimple</funcion>
+    </linea>
+    <linea>
+      <texto contenido="  COD       DESCRIPCION                       CANTIDAD   PRECIO   DESC%    TOTAL" fila="14" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <funcion>frayadosimple</funcion>
+    </linea>
+  </encabezado>
+  <detalle>
+    <linea>
+      <etiqueta nombre="@codigo_referencia" fila="16" columna="0" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@descripcion_producto" fila="16" columna="12" tamaño="P" alineacion="N" formato="N" longitud="32"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@cantidad_producto" fila="16" columna="45" tamaño="N" alineacion="N" formato="N" longitud="8"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@precio_unitario" fila="16" columna="56" tamaño="N" alineacion="N" formato="N" longitud="8"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@tasa_descuento_producto" fila="16" columna="65" tamaño="N" alineacion="N" formato="N" longitud="5"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@total_neto_producto" fila="16" columna="71" tamaño="N" alineacion="N" formato="N" longitud="8"></etiqueta>
+    </linea>
+   
+   
+  </detalle>
+  <pie>
+    <linea>
+      <texto contenido="Total Lineas: " fila="49" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@total_lineas" fila="49" columna="14" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <funcion>frayadodoble</funcion>
+    </linea>
+    <linea>
+      <texto contenido="EXENTO" fila="51" columna="2" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@monto_exento" fila="51" columna="20" tamaño="N" alineacion="N" formato="N" longitud="12"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="SUBTOTAL" fila="51" columna="44" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@subtotal" fila="51" columna="62" tamaño="N" alineacion="N" formato="N" longitud="12"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="BASE G" fila="52" columna="2" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@tasa_general" fila="52" columna="9" tamaño="N" alineacion="N" formato="N" longitud="5"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="%" fila="52" columna="14" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@base_general" fila="52" columna="20" tamaño="N" alineacion="N" formato="N" longitud="12"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="DESCUENTO" fila="52" columna="44" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@descuento_porcentaje" fila="52" columna="54" tamaño="N" alineacion="N" formato="N" longitud="5"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="%" fila="52" columna="59" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@descuento_total" fila="52" columna="62" tamaño="N" alineacion="N" formato="N" longitud="12"></etiqueta>
+    </linea>  
+    <linea>
+      <texto contenido="IVA G" fila="53" columna="2" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@tasa_general" fila="53" columna="8" tamaño="N" alineacion="N" formato="N" longitud="5"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="%" fila="53" columna="13" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@impuesto_general" fila="53" columna="20" tamaño="N" alineacion="N" formato="N" longitud="12"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="TOTAL NETO" fila="53" columna="44" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@subtotal_despues_descuentos" fila="53" columna="62" tamaño="N" alineacion="N" formato="N" longitud="12"></etiqueta>
+    </linea> 
+    <linea>
+      <texto contenido="BASE R" fila="54" columna="2" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@tasa_reducida" fila="54" columna="9" tamaño="N" alineacion="N" formato="N" longitud="5"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="%" fila="54" columna="14" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@base_reducida" fila="54" columna="20" tamaño="N" alineacion="N" formato="N" longitud="12"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="IVA" fila="54" columna="44" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@monto_total_impuesto" fila="54" columna="62" tamaño="N" alineacion="N" formato="N" longitud="12"></etiqueta>
+    </linea>
+    
+    <linea>
+      <texto contenido="IVA R" fila="55" columna="2" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@tasa_reducida" fila="55" columna="8" tamaño="N" alineacion="N" formato="N" longitud="5"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="%" fila="55" columna="13" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@impuesto_reducido" fila="55" columna="20" tamaño="N" alineacion="N" formato="N" longitud="12"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="TOTAL VENTA  :" fila="55" columna="44" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@total" fila="55" columna="62" tamaño="N" alineacion="N" formato="N" longitud="12"></etiqueta>
+    </linea>
+    <linea>
+      <funcion>frayadodoble</funcion>
+    </linea>
+    <linea>
+      <texto contenido="SON " fila="57" columna="1" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@totalenletras" fila="57" columna="6" tamaño="N" alineacion="N" formato="N" longitud="74"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="EMITIR CHEQUE A NOMBRE DE COMERCIAL VIVERA. C.A. " fila="58" columna="1" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+  </pie>
+</formato>

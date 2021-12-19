@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Etiquetas>
+  <Etiqueta>
+    <Medida>2,45cm x 2,45cm</Medida>
+    <Alto>Q203,24</Alto>
+    <Ancho>q254</Ancho>
+    <RazonSocial>A10,20,0,1,1,1,N,</RazonSocial>
+    <Rif>A10,35,0,1,1,1,N,</Rif>
+    <Producto>A10,50,0,1,1,1,N,</Producto>
+    <CodigoBarra>B8,70,0,1,2,2,50,B,</CodigoBarra>
+    <Precio>A10,150,0,1,1,1,N,</Precio>
+  </Etiqueta>
+</Etiquetas>

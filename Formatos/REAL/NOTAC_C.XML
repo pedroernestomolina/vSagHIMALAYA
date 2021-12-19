@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<formato>
+  <configuracion>
+    <hoja>HC</hoja>
+    <items>36</items>
+    <pregunta>N</pregunta>
+    <impresora>CITIZEN</impresora>
+  </configuracion>
+
+  <encabezado >
+    <linea>
+      <texto contenido="SENIAT" fila="1" columna="0" tamaño="G" alineacion="C" formato="B"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@nombre_empresa" fila="2" columna="0" tamaño="G" alineacion="C" formato="B" longitud="80"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@rif_empresa" fila="3" columna="0" tamaño="N" alineacion="C" formato="N" longitud="80"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@direccion_empresa" fila="4" columna="0" tamaño="N" alineacion="C" formato="N" longitud="80"></etiqueta>
+    </linea>
+    <linea>
+      <funcion>fblanco</funcion>
+    </linea>
+    <linea>
+      <texto contenido="FECHA: " fila="5" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@fecha_emision" fila="5" columna="8" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="HORA: " fila="5" columna="28" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@hora_factura" fila="5" columna="35" tamaño="N" alineacion="N" formato="N" longitud="7"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="VENDEDOR: " fila="5" columna="49" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@vendedor" fila="5" columna="60" tamaño="N" alineacion="N" formato="N" longitud="20"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="COPIA NOTA CREDITO # " fila="6" columna="47" tamaño="N" alineacion="N" formato="B"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@nro_factura" fila="6" columna="69" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <funcion>frayadosimple</funcion>
+    </linea>
+    <linea>
+      <texto contenido="DATOS DEL CLIENTE: " fila="8" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@nombre_cliente" fila="9" columna="0" tamaño="N" alineacion="N" formato="B" longitud="60"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@ci_rifcliente" fila="10" columna="0" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="DIRECCION: " fila="11" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@direccion_cliente" fila="11" columna="12" tamaño="P" alineacion="N" formato="N" longitud="65"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="TELEFONO: " fila="12" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@telefono_cliente" fila="12" columna="11" tamaño="N" alineacion="N" formato="N" longitud="14"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="CONDICION DE PAGO: " fila="12" columna="30" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@condicion_pago" fila="12" columna="50" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <funcion>frayadosimple</funcion>
+    </linea>
+    <linea>
+      <texto contenido="  COD       DESCRIPCION                       CANTIDAD   PRECIO   DESC%    TOTAL" fila="14" columna="0" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <funcion>frayadosimple</funcion>
+    </linea>
+  </encabezado>
+  <detalle>
+    <linea>
+      <etiqueta nombre="@codigo_referencia" fila="16" columna="0" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@descripcion_producto" fila="16" columna="12" tamaño="P" alineacion="N" formato="N" longitud="32"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@cantidad_producto" fila="16" columna="45" tamaño="N" alineacion="N" formato="N" longitud="8"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@precio_unitario" fila="16" columna="56" tamaño="N" alineacion="N" formato="N" longitud="8"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@tasa_descuento_producto" fila="16" columna="65" tamaño="N" alineacion="N" formato="N" longitud="5"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@total_neto_producto" fila="16" columna="71" tamaño="N" alineacion="N" formato="N" longitud="8"></etiqueta>
+    </linea>
+   
+   
+  </detalle>
+  <pie>
+    <linea>
+      <funcion>frayadodoble</funcion>
+    </linea>
+    <linea>
+      <texto contenido="Total Factura  :" fila="53" columna="2" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@monto_gravable" fila="53" columna="23" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="TOTAL NETO   :" fila="53" columna="44" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@monto_total_base" fila="53" columna="62" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="DESCUENTO      :" fila="54" columna="2" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@descuento_total" fila="54" columna="23" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <etiqueta nombre="@descuento_porcentaje" fila="54" columna="33" tamaño="N" alineacion="N" formato="N" longitud="5"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="%" fila="54" columna="40" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <texto contenido="I.V.A." fila="54" columna="44" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@tasa_general" fila="54" columna="50" tamaño="N" alineacion="N" formato="N" longitud="5"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="% :" fila="54" columna="55" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@monto_total_impuesto" fila="54" columna="62" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="TOTAL VENTA  :" fila="55" columna="44" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@total" fila="55" columna="62" tamaño="N" alineacion="N" formato="N" longitud="10"></etiqueta>
+    </linea>
+    <linea>
+      <funcion>frayadodoble</funcion>
+    </linea>
+    <linea>
+      <texto contenido="SON " fila="57" columna="1" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+    <linea>
+      <etiqueta nombre="@totalenletras" fila="57" columna="6" tamaño="N" alineacion="N" formato="N" longitud="74"></etiqueta>
+    </linea>
+    <linea>
+      <texto contenido="EMITIR CHEQUE A NOMBRE DE COMERCIAL VIVERA. C.A. " fila="58" columna="1" tamaño="N" alineacion="N" formato="N"/>
+    </linea>
+  </pie>
+</formato>
